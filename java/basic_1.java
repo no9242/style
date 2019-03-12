@@ -1,5 +1,3 @@
-import demo.AboutCollection;
-
 import java.util.List;
 import java.util.ArrayList;
 
@@ -68,7 +66,7 @@ class basic_1 {
         long L = 9223372036854775807L;
 
         /**
-         * 
+         *
          * 基本类型：float
          * 二进制位数：32
          * 包装类：java.lang.Float
@@ -144,23 +142,29 @@ class basic_1 {
          * 数组 [I@15db9742
          */
         // int[] iArr = new int[1]; //or
-        int[] iArr = { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+        int[] iArr = {1, 2, 3, 4, 5, 6, 7, 8, 9};
         // char[] cArr = new char[10]; //or
-        char[] cArr = { '你', '还', '好', '吗' };
+        char[] cArr = {'你', '还', '好', '吗'};
+
 
         /**
-         * 集合 Collection -> [List<E>, Queue<E>, Set<E>]
-         *  List -> [LinkedList<E>, ArrayList]
-         *  Set -> HashSet
-         * 
-         * 集合 Map -> HashMap<K,V>
+         * 集合
+         *  Collection -> [Map<K,V>, List<E>, Set<E>]
+         *
+         *      Map 键值对应类型
+         *      Map -> HashMap<K,V>
+         *      Map -> TreeMap<K,V>
+         *
+         *      List 有序类型,可重复
+         *      List -> LinkedList<E>
+         *      List -> ArrayList<E>
+         *
+         *      Set 无序类型(以hash码排列) 不能重复
+         *      Set -> HashSet<E>
+         *      Set -> TreeSet<E>
+         *
          */
-
-        List arrList = new ArrayList();
-        arrList.add("abcd1234");
-        arrList.add('a');
-        arrList.add(123456);
-        arrList.add(1.234f);
+        aboutCollection aboutCollection = new aboutCollection();
     }
 
 }

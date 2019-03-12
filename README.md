@@ -15,4 +15,4 @@
 
 关于集合的
 
-/java/demo/AboutCollection.java
+/java/collections/
