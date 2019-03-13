@@ -3,7 +3,7 @@
 
 ##HTML & CSS & JAVASCRIPT(DOM)
 
-/html/*
+html/
 
 ## Javascript(node.js)
 
@@ -11,8 +11,10 @@
 
 ## PHP
 
-##java
+## Java
 
-关于集合的
+java/
 
-/java/collections/
+## Android
+
+android/
