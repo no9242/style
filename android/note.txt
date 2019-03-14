@@ -1,8 +1,11 @@
 class 与 xml 不是必须对应;
 
-xml看做窗口的一块, 理论情况可以一个xml调用无数个xml;
+activity可以理解成启动在内存的class;
+
+xml看做窗口的一块, 可以是单独一个使用,或者一个xml调用无数个xml;
 
 简单的说就像html里的div包含无数个div
 
 所有非瞬时的计算都要独立线程操作;
 
+自定义内容的列表使用adapter
