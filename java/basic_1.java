@@ -146,25 +146,22 @@ class basic_1 {
         // char[] cArr = new char[10]; //or
         char[] cArr = {'你', '还', '好', '吗'};
 
+        // try catch 错误捕获
+        try {
+            aboutThrow();
+            int i = 1 / 0;
+        } catch (Exception e) {
+            System.out.println(e);
+            //手动中断程序
+            return;
+        }
 
-        /**
-         * 集合
-         *  Collection -> [Map<K,V>, List<E>, Set<E>]
-         *
-         *      Map 键值对应类型
-         *      Map -> HashMap<K,V>
-         *      Map -> TreeMap<K,V>
-         *
-         *      List 有序类型,可重复
-         *      List -> LinkedList<E>
-         *      List -> ArrayList<E>
-         *
-         *      Set 无序类型(以hash码排列) 不能重复
-         *      Set -> HashSet<E>
-         *      Set -> TreeSet<E>
-         *
-         */
-        aboutCollection aboutCollection = new aboutCollection();
+        System.out.println("end...");
     }
 
+    //声明将会抛出异常
+    private static void aboutThrow() throws Exception{
+        //自定义一个异常
+        throw new Exception("自定义异常中断");
+    }
 }

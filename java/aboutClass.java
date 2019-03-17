@@ -1,31 +1,51 @@
-import java.util.ArrayList;
-import java.util.Iterator;
-
+/**
+ * 类 面向对象的开始
+ */
 public class aboutClass {
-    /**
-     * AboutArrayList
-     * 用智能ide导入工程, 会显示ArrayList的所有方法,各个测试
-     * 再加上自定义的方法,扩展ArrayList,地址项目所以需要的class
-     */
-    public class AboutArrayList extends ArrayList {
-        /**
-         * 一旦扩展了官方的类,就要声明serialVersionUID,用来给系统检测兼容性
-         */
-        private static final long serialVersionUID = 1L;
+    int i = 1;
+    int i1;
 
+    //  常量
+    final int i2 = 2;
+    //  静态
+    static int i3 = 3;
+    //  静态常量
+    final static int i4 = 4;
 
-        /**
-         * 检测数组是否全为int
-         */
-        public boolean isInt() {
-            Iterator iterator = iterator();
-            while (iterator.hasNext()) {
-                if (!(iterator.next() instanceof Integer)) {
-                    return false;
-                }
-            }
-            return true;
-        }
+    //    任意可见
+    public int i5 = 0;
+
+    //    同包可见
+    protected int i6 = 0;
+
+    //    同类可见
+    private int i7 = 0;
+
+    //    构造方法
+    aboutClass(String... p) {
+        i1 = i + 1;
+    }
+
+    //    void 无返回
+    public void fun1() {
+    }
+
+    //    返回int类型
+    protected int fun2() {
+        return i1;
+    }
+
+    private aboutClass fun3() {
+        return this;
+    }
+
+    //    静态方法,不用new类,直接调用
+    static int fun4() {
+        return 123;
+    }
+
+    // 常量方法无法重写
+    final int fun5(){
+        return 456;
     }
 }
-
