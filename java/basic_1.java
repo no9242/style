@@ -146,7 +146,7 @@ class basic_1 {
         // char[] cArr = new char[10]; //or
         char[] cArr = {'你', '还', '好', '吗'};
 
-        aboutFanshe.run();
+//        aboutFanshe.run();
 
 
         // try catch 错误捕获
