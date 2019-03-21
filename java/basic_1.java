@@ -150,16 +150,25 @@ class basic_1 {
 
 
         // try catch 错误捕获
-        try {
-            aboutThrow();
-            int i = 1 / 0;
-        } catch (Exception e) {
-            System.out.println(e);
-            //手动中断程序
-            return;
+//        try {
+//            aboutThrow();
+//            int i = 1 / 0;
+//        } catch (Exception e) {
+//            System.out.println(e);
+//            //手动中断程序
+//            return;
+//        }
+//
+//        System.out.println("end...");
+
+        for (int i=0; i<10; i++){
+            new aboutThread(i).start();
         }
 
-        System.out.println("end...");
+
+        for (int i=0; i<10; i++){
+            new Thread(new aboutRunnable()).start();
+        }
     }
 
     //声明将会抛出异常
@@ -167,4 +176,5 @@ class basic_1 {
         //自定义一个异常
         throw new Exception("自定义异常中断");
     }
+
 }
